@@ -1,0 +1,114 @@
+/* base */
+html {
+    background: url(./../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    clear: both;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.position {
+    position: relative;
+}
+
+/* utils */
+.block {
+    display: block !important;
+}
+
+/* containers */
+.container__base {
+    margin: 40px 0;
+    padding: 20px;
+    background: url(./../img/paper-10.jpg) repeat;
+    position: relative;
+}
+
+/* typography */
+.typewriter__font {
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1rem !important;
+}
+.typewriter__font--all * {
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1rem !important;
+}
+.heading {
+    font-family: 'Special Elite', cursive !important;
+    font-size: 2rem !important;
+    text-align: center;
+}
+.font--justify {
+    text-align: justify;
+}
+.font--indent {
+    text-indent: 2em !important;
+}
+
+/* buttons */
+.button__base {
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    padding: 10px 20px 8px !important;
+    margin: 10px !important;
+    background: rgba(49,89,83, 0.75) !important;
+    color: #E5E6CB !important;
+    border-color: #E5E6CB !important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button__base:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: rgba(49,89,83, 1) !important;
+}
+
+/* animations */
+.animation-enter {
+  opacity: 0;
+  transform: translateY(50%);
+  transform: translate3d(0,50%,0);
+}
+.animation-enter-active {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.animation-exit {
+  opacity: 1;
+  	transform: translate3d(0,0,0);
+  transform: scale(1) translateY(0%);
+}
+.animation-exit-active {
+  opacity: 0;
+  transform: scale(0.9) translateY(50%);
+    transform: translate3d(0,50%,0);
+
+}
+
+/* forms */
+.form__field--margin {
+    margin: 5px 10px !important;
+}
+
+/* welcome component */
+.welcome__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.welcome__button--margin {
+    margin-top: 25px !important;
+}
